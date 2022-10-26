@@ -1,0 +1,72 @@
+* {
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+}
+
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+  padding: 50px 0;
+}
+
+.table {
+  background-color: #faf5ef;
+  color: black;
+  text-align: center;
+  font-size: 17px;
+  width: 700px;
+  border: solid 3px;
+  border-radius: 30px;
+  padding: 50px;
+  margin: 25px auto;
+}
+
+input.weight-js {
+  height: 30px;
+  background-color: white;
+  border: solid 1px black;
+  margin-right: 100px;
+  padding: 0 0 0 10px;
+}
+
+input.height-js {
+  height: 30px;
+  background-color: white;
+  border: solid 1px black;
+  padding: 0 0 0 10px;
+}
+
+.submit-js {
+  width: 150px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  margin: 70px auto 0;
+  align-items: center;
+  font-size: 20px;
+  border-radius: 0px;
+}
+
+.imc-green {
+  height: 200px;
+  color: white;
+  background-color: green;
+  font-size: 30px;
+  padding: 80px;
+}
+
+.imc-yellow {
+  height: 200px;
+  color: white;
+  background-color: yellow;
+  font-size: 30px;
+  padding: 80px;
+}
+
+.imc-red {
+  height: 200px;
+  color: rgb(0, 0, 0);
+  background-color: red;
+  font-size: 30px;
+  padding: 80px;
+}
