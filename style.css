@@ -3,6 +3,10 @@
   font-family: "Raleway", sans-serif;
 }
 
+html {
+  background-color: #c7cdea;
+}
+
 h1 {
   text-align: center;
   text-transform: uppercase;
@@ -48,25 +52,16 @@ input.height-js {
 }
 
 .imc-green {
-  height: 200px;
-  color: white;
-  background-color: green;
-  font-size: 30px;
+  background-image: url(../calculate-imc/assets/img/green.png);
   padding: 80px;
 }
 
 .imc-yellow {
-  height: 200px;
-  color: white;
-  background-color: yellow;
-  font-size: 30px;
+  background-image: url(../calculate-imc/assets/img/yellow.png);
   padding: 80px;
 }
 
 .imc-red {
-  height: 200px;
-  color: rgb(0, 0, 0);
-  background-color: red;
-  font-size: 30px;
+  background-image: url(../calculate-imc/assets/img/red.png);
   padding: 80px;
 }

@@ -1,6 +1,3 @@
-let mainTitle = document.getElementById("first-title-js");
-mainTitle.innerHTML = "Calculate your IMC";
-
 function calculateIMC(event) {
   event.preventDefault();
 
@@ -12,16 +9,19 @@ function calculateIMC(event) {
 
   let heightValue = document.querySelector(".height-js").value;
 
-  let imcResult = (weightValue / heightValue ** 2).toFixed(1);
+  let imc = (weightValue / heightValue ** 2).toFixed(1);
 
-  let resultImc = document.querySelector(".result-js");
-  resultImc.innerHTML = imcResult;
+  let imcResult = document.querySelector(".result-js");
+  imcResult.innerHTML = imc;
+  document.querySelector(".result-js").appendChild(".imc-green");
+  document.querySelector(".result-js").appendChild(".imc-yellow");
+  document.querySelector(".result-js").appendChild(".imc-red");
 
-  if (imcResult < 21) {
-    resultImc.setAttribute("class", "result-js imc-green");
-  } else if (imcResult >= 21 && imcResult < 26) {
-    resultImc.setAttribute("class", "result-js imc-yellow");
+  if (imc < 21) {
+    imcResult.setAttribute("class", "result-js imc-green");
+  } else if (imc >= 21 && imcResult < 26) {
+    imcResult.setAttribute("class", "result-js imc-yellow");
   } else {
-    resultImc.setAttribute("class", "result-js imc-red");
+    imcResult.setAttribute("class", "result-js imc-red");
   }
 }
