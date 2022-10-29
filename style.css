@@ -4,23 +4,28 @@
 }
 
 html {
-  background-color: #c7cdea;
+  background: url("https://images.unsplash.com/photo-1611077544170-be90a2f68add");
+  background-color: #fcbc05;
+  background-size: 100vh;
+  background-position: 100vh 35vh;
+  background-repeat: no-repeat;
 }
 
 h1 {
+  color: #000;
   text-align: center;
   text-transform: uppercase;
   padding: 50px 0;
 }
 
 .table {
-  background-color: #faf5ef;
+  background-color: rgb(250 245 239 / 64%);
   color: black;
   text-align: center;
   font-size: 17px;
   width: 700px;
   border: solid 3px;
-  border-radius: 30px;
+  border-radius: 10px;
   padding: 50px;
   margin: 25px auto;
 }
@@ -41,27 +46,16 @@ input.height-js {
 }
 
 .submit-js {
-  width: 150px;
+  width: 140px;
   height: 45px;
   display: flex;
   justify-content: center;
-  margin: 70px auto 0;
+  margin: 70px auto 70px;
   align-items: center;
-  font-size: 20px;
+  font-size: 16px;
   border-radius: 0px;
-}
-
-.imc-green {
-  background-image: url(../calculate-imc/assets/img/green.png);
-  padding: 80px;
-}
-
-.imc-yellow {
-  background-image: url(../calculate-imc/assets/img/yellow.png);
-  padding: 80px;
-}
-
-.imc-red {
-  background-image: url(../calculate-imc/assets/img/red.png);
-  padding: 80px;
+  background-color: black;
+  color: white;
+  border: solid white;
+  border-radius: 5px;
 }

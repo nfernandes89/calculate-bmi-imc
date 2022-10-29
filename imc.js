@@ -13,15 +13,17 @@ function calculateIMC(event) {
 
   let imcResult = document.querySelector(".result-js");
   imcResult.innerHTML = imc;
-  document.querySelector(".result-js").appendChild(".imc-green");
-  document.querySelector(".result-js").appendChild(".imc-yellow");
-  document.querySelector(".result-js").appendChild(".imc-red");
 
-  if (imc < 21) {
-    imcResult.setAttribute("class", "result-js imc-green");
-  } else if (imc >= 21 && imcResult < 26) {
-    imcResult.setAttribute("class", "result-js imc-yellow");
-  } else {
-    imcResult.setAttribute("class", "result-js imc-red");
+  if (imc < 20) {
+    document.querySelector(".img-green").setAttribute("src", "light-green.png");
+    imcResult.setAttribute("class", "result-js");
+  } else if (imc >= 20 && imc <= 25) {
+    document
+      .querySelector(".img-yellow")
+      .setAttribute("src", "light-yellow.png");
+    imcResult.setAttribute("class", "result-js");
+  } else if (imc > 25) {
+    document.querySelector(".img-red").setAttribute("src", "light-red.png");
+    imcResult.setAttribute("class", "result-js");
   }
 }
