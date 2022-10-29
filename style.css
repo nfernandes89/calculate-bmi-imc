@@ -3,7 +3,7 @@
   font-family: "Raleway", sans-serif;
 }
 
-html {
+body {
   background: url("https://images.unsplash.com/photo-1611077544170-be90a2f68add");
   background-color: #fcbc05;
   background-size: 100vh;
@@ -30,19 +30,23 @@ h1 {
   margin: 25px auto;
 }
 
-input.weight-js {
-  height: 30px;
-  background-color: white;
-  border: solid 1px black;
-  margin-right: 100px;
-  padding: 0 0 0 10px;
+@media (min-width: 992px) {
+  input.weight-js {
+    height: 30px;
+    background-color: white;
+    border: solid 1px black;
+    margin-right: 100px;
+    padding: 0 0 0 10px;
+  }
 }
 
-input.height-js {
-  height: 30px;
-  background-color: white;
-  border: solid 1px black;
-  padding: 0 0 0 10px;
+@media (min-width: 992px) {
+  input.height-js {
+    height: 30px;
+    background-color: white;
+    border: solid 1px black;
+    padding: 0 0 0 10px;
+  }
 }
 
 .submit-js {
