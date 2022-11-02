@@ -28,7 +28,7 @@ function calculateIMC(event) {
       .querySelector(".img-yellow")
       .setAttribute("src", "light-yellow.png");
     imcResult.setAttribute("class", "result-js");
-    cimcResult.innerHTML = imc + ": Overweight";
+    imcResult.innerHTML = imc + ": Overweight";
   } else if (imc > 30) {
     document.querySelector(".img-red").setAttribute("src", "light-red.png");
     imcResult.setAttribute("class", "result-js");
