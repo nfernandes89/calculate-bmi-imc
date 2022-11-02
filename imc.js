@@ -12,18 +12,26 @@ function calculateIMC(event) {
   let imc = (weightValue / heightValue ** 2).toFixed(1);
 
   let imcResult = document.querySelector(".result-js");
-  imcResult.innerHTML = imc;
 
-  if (imc < 20) {
+  if (imc < 18.5) {
+    document
+      .querySelector(".img-attention")
+      .setAttribute("src", "attention.png");
+    imcResult.setAttribute("class", "result-js");
+    imcResult.innerHTML = imc + ": Underweight";
+  } else if (imc > 18.5 && imc <= 24.9) {
     document.querySelector(".img-green").setAttribute("src", "light-green.png");
     imcResult.setAttribute("class", "result-js");
-  } else if (imc >= 20 && imc <= 25) {
+    imcResult.innerHTML = imc + ": Normal weight";
+  } else if (imc > 25 && imc <= 29.9) {
     document
       .querySelector(".img-yellow")
       .setAttribute("src", "light-yellow.png");
     imcResult.setAttribute("class", "result-js");
-  } else if (imc > 25) {
+    cimcResult.innerHTML = imc + ": Overweight";
+  } else if (imc > 30) {
     document.querySelector(".img-red").setAttribute("src", "light-red.png");
     imcResult.setAttribute("class", "result-js");
+    imcResult.innerHTML = imc + ": Obesity";
   }
 }
